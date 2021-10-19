@@ -62,10 +62,10 @@ export default class App extends React.Component {
   handleUploadPhoto = () => {
     console.log('\n\nYA  V UPLOAD\n\n');
     // fetch('http://10.0.2.2:3000/api/upload', {
-    fetch('https://masterup.2hst.ru:4000/reports/photos/upload', {
+    fetch('https://localhost/api', {
       method: 'POST',
       headers: {
-        Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE2LCJ1c2VyVHlwZSI6ImNsaWVudCIsImlhdCI6MTYzNDY0ODkzNSwiZXhwIjoxNjM0NjUyNTM1fQ.p_8KbVqBKqLu1gtWg8gahjIxQHdU9klxXAEOas-HEpQ'
+        Authorization: 'Bearer '
       },
       body: createFormData(this.state.photo, {}),
     })

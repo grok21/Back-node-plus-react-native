@@ -58,9 +58,9 @@ const Section = ({children, title}): Node => {
 const App: () => Node = () => {
   const photoUri = 'https://cdnimg.rg.ru/img/content/170/30/99/654_d_850.jpg';
   const UPLOAD_FOTO_ENDPOINT =
-    'https://masterup.2hst.ru:4000/reports/photos/upload';
+    'https://localhost/api';
   const TOKEN =
-    'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjE2LCJ1c2VyVHlwZSI6ImNsaWVudCIsImlhdCI6MTYzNDU5MTYyNiwiZXhwIjoxNjM0NTk1MjI2fQ.qRbePWkmEkmOYg2SVK2l95QtHK4l_qMp5zVsjxOITjE';
+    'Bearer ';
 
   const onClickUpload = () => {
     const xhr = new XMLHttpRequest();
